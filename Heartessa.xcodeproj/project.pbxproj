@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA200000000000000000006F /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = AA800000000000000000002F /* RevenueCat */; };
 		AA200000000000000000001F /* HeartessaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001F /* HeartessaApp.swift */; };
 		AA200000000000000000002F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002F /* ContentView.swift */; };
 		AA200000000000000000003F /* BPReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003F /* BPReading.swift */; };
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA200000000000000000006F /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,7 @@
 			);
 			name = Heartessa;
 			packageProductDependencies = (
+				AA800000000000000000002F /* RevenueCat */,
 			);
 			productName = Heartessa;
 			productReference = AA100000000000000000008F /* Heartessa.app */;
@@ -124,6 +127,7 @@
 			);
 			mainGroup = AA300000000000000000000F;
 			packageReferences = (
+				AA800000000000000000001F /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = AA300000000000000000004F /* Products */;
 			projectDirPath = "";
@@ -353,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA800000000000000000001F /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA800000000000000000002F /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA800000000000000000001F /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 	};
 	rootObject = AA700000000000000000001F /* Project object */;

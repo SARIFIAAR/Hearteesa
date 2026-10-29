@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 import RevenueCat
+import FirebaseCore
 import LocalAuthentication
 
 @main
@@ -8,7 +9,7 @@ struct HeartessaApp: App {
     let modelContainer: ModelContainer
 
     init() {
-        // FirebaseApp.configure() — add after Firebase SPM is wired in Xcode
+        FirebaseApp.configure()
         Purchases.configure(withAPIKey: "appl_CrdjebQuruAkIvSRQyMGeRFKTXS")
 
         do {

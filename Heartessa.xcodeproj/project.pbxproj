@@ -25,6 +25,10 @@
 		AA200000000000000000004F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004F /* UserProfile.swift */; };
 		AA200000000000000000005F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005F /* Assets.xcassets */; };
 		AA200000000000000000009F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000009F /* GoogleService-Info.plist */; };
+		AA20000000000000000001BF /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000001BF /* FirestoreService.swift */; };
+		AA20000000000000000001CF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000002F /* FirebaseCore */; };
+		AA20000000000000000001DF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000003F /* FirebaseFirestore */; };
+		AA20000000000000000001EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000004F /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,7 @@
 		AA100000000000000000018F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		AA100000000000000000019F /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
 		AA10000000000000000001AF /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
+		AA10000000000000000001BF /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA200000000000000000006F /* RevenueCat in Frameworks */,
+				AA20000000000000000001CF /* FirebaseCore in Frameworks */,
+				AA20000000000000000001DF /* FirebaseFirestore in Frameworks */,
+				AA20000000000000000001EF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,7 @@
 				AA100000000000000000018F /* PaywallView.swift */,
 				AA100000000000000000019F /* ExportService.swift */,
 				AA10000000000000000001AF /* WatchConnectivityService.swift */,
+				AA10000000000000000001BF /* FirestoreService.swift */,
 				AA300000000000000000002F /* Models */,
 				AA100000000000000000005F /* Assets.xcassets */,
 				AA100000000000000000006F /* Info.plist */,
@@ -130,6 +139,9 @@
 			name = Heartessa;
 			packageProductDependencies = (
 				AA800000000000000000002F /* RevenueCat */,
+				AA900000000000000000002F /* FirebaseCore */,
+				AA900000000000000000003F /* FirebaseFirestore */,
+				AA900000000000000000004F /* FirebaseAuth */,
 			);
 			productName = Heartessa;
 			productReference = AA100000000000000000008F /* Heartessa.app */;
@@ -161,6 +173,7 @@
 			mainGroup = AA300000000000000000000F;
 			packageReferences = (
 				AA800000000000000000001F /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				AA900000000000000000001F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = AA300000000000000000004F /* Products */;
 			projectDirPath = "";
@@ -203,6 +216,7 @@
 				AA200000000000000000018F /* PaywallView.swift in Sources */,
 				AA200000000000000000019F /* ExportService.swift in Sources */,
 				AA20000000000000000001AF /* WatchConnectivityService.swift in Sources */,
+				AA20000000000000000001BF /* FirestoreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +425,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		AA900000000000000000001F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -418,6 +440,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA800000000000000000001F /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCat;
+		};
+		AA900000000000000000002F /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA900000000000000000001F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		AA900000000000000000003F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA900000000000000000001F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AA900000000000000000004F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA900000000000000000001F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 

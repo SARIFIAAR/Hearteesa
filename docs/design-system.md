@@ -3,7 +3,7 @@
 **Author:** MetaTec Senior Apple Platforms UI/UX Designer  
 **Date:** 2026-10-29  
 **iOS minimum:** 17.0 · **Design language era:** iOS 27 / Liquid Glass gen-2 (refined)  
-**Bundle ID:** com.metatec.hearteesa  
+**Bundle ID:** com.heartessa.app · **Team ID:** 9F2G8CQ45J  
 **Status:** Single source of truth for engineering and design — production-ready
 
 ---

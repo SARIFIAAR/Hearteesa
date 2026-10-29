@@ -597,7 +597,7 @@
 
 | Story | Given | When | Then |
 |---|---|---|---|
-| S0-1: Project scaffold | A new empty iOS project | I open Xcode | SwiftUI app, iOS 17+ minimum, SwiftData enabled, bundle `com.metatec.hearteesa` |
+| S0-1: Project scaffold | A new empty iOS project | I open Xcode | SwiftUI app, iOS 17+ minimum, SwiftData enabled, bundle `com.heartessa.app` |
 | S0-2: Encrypted data model | I define BPReading | I save it | Persists via SwiftData with `.encrypt` attribute; survives cold relaunch |
 | S0-3: Firebase project | Firebase configured | App launches | Connects to Firestore `hartessa` project; no crash |
 | S0-4: RevenueCat skeleton | RevenueCat SDK installed | App launches | Initializes with project key; entitlement `premium` exists; no paywall shown |
@@ -605,7 +605,7 @@
 
 #### Acceptance Criteria
 
-- [ ] Bundle ID: `com.metatec.hearteesa` · Target: iOS 17.0+ · Min: iOS 17.0
+- [ ] Bundle ID: `com.heartessa.app` · Team ID: `9F2G8CQ45J` · Target: iOS 17.0+ · Min: iOS 17.0
 - [ ] SwiftData model `BPReading`: systolic Int, diastolic Int, pulse Int, timestamp Date, arm `Arm` (left/right/unspecified), position `Position` (sitting/standing/lying/unspecified), notes String?, tags [String], weight Double?, isMorningReading Bool (computed: hour < 12)
 - [ ] SwiftData model `UserProfile`: id UUID, name String, colorHex String, isDefault Bool
 - [ ] SwiftData container configured with `ModelConfiguration(isStoredInMemoryOnly: false, allowsSave: true)` and encryption enabled

@@ -48,7 +48,8 @@ Full competitor teardown, master feature list, and detailed sprint plan with use
 - **iOS:** SwiftUI · SwiftData · WidgetKit · HealthKit · WatchKit
 - **Backend:** Firebase Firestore (optional sync, premium)
 - **Monetization:** RevenueCat — two tiers only: $1.99/month · $12.99/year
-- **Bundle ID:** com.metatec.hearteesa
+- **Bundle ID:** com.heartessa.app
+- **Team ID:** 9F2G8CQ45J
 - **Min deployment:** iOS 17.0
 
 ---

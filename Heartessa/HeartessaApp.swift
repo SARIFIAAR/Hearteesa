@@ -1,11 +1,14 @@
 import SwiftUI
 import SwiftData
+import RevenueCat
 
 @main
 struct HeartessaApp: App {
     let modelContainer: ModelContainer
 
     init() {
+        Purchases.configure(withAPIKey: "appl_CrdjebQuruAkIvSRQyMGeRFKTXS")
+
         do {
             let schema = Schema([BPReading.self, UserProfile.self])
             let config = ModelConfiguration(

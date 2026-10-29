@@ -103,7 +103,7 @@ struct ReadingRow: View {
             Spacer()
 
             VStack(alignment: .trailing, spacing: 5) {
-                CategoryBadge(category: reading.category)
+                CategoryBadge(reading: reading)
                 HStack(spacing: 6) {
                     if reading.arm != .unspecified {
                         Text(reading.arm == .left ? "L" : "R")

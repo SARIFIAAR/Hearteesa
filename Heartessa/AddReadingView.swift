@@ -100,7 +100,7 @@ struct AddReadingView: View {
                         HStack {
                             Text("Category")
                             Spacer()
-                            CategoryBadge(category: BPCategory.classify(systolic: s, diastolic: d))
+                            CategoryBadge(systolic: s, diastolic: d)
                         }
                     }
                 }

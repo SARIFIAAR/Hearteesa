@@ -20,26 +20,64 @@ struct ContentView: View {
 // MARK: - Shared Components
 
 struct CategoryBadge: View {
-    let category: BPCategory
+    let systolic: Int
+    let diastolic: Int
+    @AppStorage("heartessa.bpStandard") private var standard = "accaha"
+
+    init(systolic: Int, diastolic: Int) {
+        self.systolic = systolic
+        self.diastolic = diastolic
+    }
+
+    init(reading: BPReading) {
+        self.systolic = reading.systolic
+        self.diastolic = reading.diastolic
+    }
 
     var body: some View {
-        Text(category.rawValue)
+        Text(label)
             .font(.caption2.weight(.semibold))
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
-            .background(categoryColor.opacity(0.15), in: Capsule())
-            .foregroundStyle(categoryColor)
+            .background(badgeColor.opacity(0.15), in: Capsule())
+            .foregroundStyle(badgeColor)
     }
 
-    var categoryColor: Color {
-        switch category {
-        case .normal:      return Color(hex: "#2D9D6E")
-        case .elevated:    return Color(hex: "#C9860A")
-        case .highStage1:  return Color(hex: "#D4621A")
-        case .highStage2:  return Color(hex: "#C02828")
-        case .ish:         return Color(hex: "#7B3DBD")
-        case .hypotension: return Color(hex: "#2563B8")
-        case .crisis:      return Color(hex: "#8B0000")
+    private var label: String {
+        if standard == "esc2018" {
+            return ESCCategory.classify(systolic: systolic, diastolic: diastolic).rawValue
+        }
+        return BPCategory.classify(systolic: systolic, diastolic: diastolic).rawValue
+    }
+
+    private var badgeColor: Color {
+        if standard == "esc2018" {
+            return escColor(ESCCategory.classify(systolic: systolic, diastolic: diastolic))
+        }
+        return accColor(BPCategory.classify(systolic: systolic, diastolic: diastolic))
+    }
+
+    private func accColor(_ c: BPCategory) -> Color {
+        switch c {
+        case .normal:      Color(hex: "#2D9D6E")
+        case .elevated:    Color(hex: "#C9860A")
+        case .highStage1:  Color(hex: "#D4621A")
+        case .highStage2:  Color(hex: "#C02828")
+        case .ish:         Color(hex: "#7B3DBD")
+        case .hypotension: Color(hex: "#2563B8")
+        case .crisis:      Color(hex: "#8B0000")
+        }
+    }
+
+    private func escColor(_ c: ESCCategory) -> Color {
+        switch c {
+        case .optimal:     Color(hex: "#2D9D6E")
+        case .normal:      Color(hex: "#56B87C")
+        case .highNormal:  Color(hex: "#C9860A")
+        case .grade1:      Color(hex: "#D4621A")
+        case .grade2:      Color(hex: "#C02828")
+        case .grade3:      Color(hex: "#8B0000")
+        case .hypotension: Color(hex: "#2563B8")
         }
     }
 }

@@ -34,6 +34,27 @@ enum BPCategory: String, Codable {
     }
 }
 
+// ESC/ESH 2018 classification
+enum ESCCategory: String, Codable {
+    case optimal    = "Optimal"
+    case normal     = "Normal"
+    case highNormal = "High Normal"
+    case grade1     = "Grade 1 HT"
+    case grade2     = "Grade 2 HT"
+    case grade3     = "Grade 3 HT"
+    case hypotension = "Hypotension"
+
+    static func classify(systolic: Int, diastolic: Int) -> ESCCategory {
+        if systolic < 90 || diastolic < 60     { return .hypotension }
+        if systolic < 120 && diastolic < 80    { return .optimal }
+        if systolic < 130 && diastolic < 85    { return .normal }
+        if systolic < 140 && diastolic < 90    { return .highNormal }
+        if systolic >= 180 || diastolic >= 110 { return .grade3 }
+        if systolic >= 160 || diastolic >= 100 { return .grade2 }
+        return .grade1
+    }
+}
+
 @Model
 final class BPReading {
     var id: UUID

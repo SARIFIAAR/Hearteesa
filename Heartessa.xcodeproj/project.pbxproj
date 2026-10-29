@@ -15,6 +15,10 @@
 		AA200000000000000000014F /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000014F /* MoreView.swift */; };
 		AA200000000000000000015F /* InsightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000015F /* InsightService.swift */; };
 		AA200000000000000000016F /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000016F /* HealthKitService.swift */; };
+		AA200000000000000000017F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000017F /* OnboardingView.swift */; };
+		AA200000000000000000018F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000018F /* PaywallView.swift */; };
+		AA200000000000000000019F /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000019F /* ExportService.swift */; };
+		AA20000000000000000001AF /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000001AF /* WatchConnectivityService.swift */; };
 		AA200000000000000000001F /* HeartessaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001F /* HeartessaApp.swift */; };
 		AA200000000000000000002F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002F /* ContentView.swift */; };
 		AA200000000000000000003F /* BPReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003F /* BPReading.swift */; };
@@ -40,6 +44,10 @@
 		AA100000000000000000014F /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		AA100000000000000000015F /* InsightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightService.swift; sourceTree = "<group>"; };
 		AA100000000000000000016F /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		AA100000000000000000017F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AA100000000000000000018F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		AA100000000000000000019F /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		AA10000000000000000001AF /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				AA100000000000000000014F /* MoreView.swift */,
 				AA100000000000000000015F /* InsightService.swift */,
 				AA100000000000000000016F /* HealthKitService.swift */,
+				AA100000000000000000017F /* OnboardingView.swift */,
+				AA100000000000000000018F /* PaywallView.swift */,
+				AA100000000000000000019F /* ExportService.swift */,
+				AA10000000000000000001AF /* WatchConnectivityService.swift */,
 				AA300000000000000000002F /* Models */,
 				AA100000000000000000005F /* Assets.xcassets */,
 				AA100000000000000000006F /* Info.plist */,
@@ -187,6 +199,10 @@
 				AA200000000000000000014F /* MoreView.swift in Sources */,
 				AA200000000000000000015F /* InsightService.swift in Sources */,
 				AA200000000000000000016F /* HealthKitService.swift in Sources */,
+				AA200000000000000000017F /* OnboardingView.swift in Sources */,
+				AA200000000000000000018F /* PaywallView.swift in Sources */,
+				AA200000000000000000019F /* ExportService.swift in Sources */,
+				AA20000000000000000001AF /* WatchConnectivityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

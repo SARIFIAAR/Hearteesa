@@ -64,7 +64,7 @@ struct LatestReadingCard: View {
                     .monospacedDigit()
                 Text("mmHg").font(.title3).foregroundStyle(.secondary)
                 Spacer()
-                CategoryBadge(category: reading.category)
+                CategoryBadge(reading: reading)
             }
 
             HStack(spacing: 16) {

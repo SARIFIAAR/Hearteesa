@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>4</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
@@ -28,9 +28,10 @@
 	<string>Heartessa reads blood pressure data from Apple Health to display alongside your logged readings.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Heartessa writes your blood pressure readings to Apple Health so your data stays in sync.</string>
-	<key>UIBackgroundModes</key>
+	<key>UIAppFonts</key>
 	<array>
-		<string>fetch</string>
+		<string>SpaceGrotesk.ttf</string>
+		<string>ShareTechMono.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict/>

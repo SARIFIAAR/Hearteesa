@@ -3,11 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34E5F6292D101B7DBAF46F41 /* WatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192B0956A018F6B67E349AC /* WatchLogView.swift */; };
+		34F0C151F15A805532F13FCC /* AppGroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBF4F4AD140A434C3E415BF /* AppGroupStore.swift */; };
+		3A105C5499BC647D9850270B /* BPReadingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357284BB0DE1E788C32D3E7 /* BPReadingDTO.swift */; };
+		47D90DA646548C50B653D2F9 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471EBB8275162DFDCF95E10 /* ColorHex.swift */; };
+		4B9E22BCD92B4F1CB14DFD1A /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471EBB8275162DFDCF95E10 /* ColorHex.swift */; };
+		514393AF15061A4A21F639F7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DDC9BE2348BA4A0D15F98 /* WidgetKit.framework */; };
+		5CB886FB3040285818861B89 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EE85675865D9B0438B7AD0 /* WatchConnectivity.framework */; };
+		5E5E487303A017A438DB27FA /* HeartessaComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378688DD3FD2216190E4A238 /* HeartessaComplication.swift */; };
+		6E36E8E303622CFB563F25B8 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471EBB8275162DFDCF95E10 /* ColorHex.swift */; };
+		72ECB0A2EB893F5721F65357 /* WatchConnectivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EACF702BA5F731B4DA134E /* WatchConnectivityBridge.swift */; };
+		7769FCECA9A75F1223EA1803 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC0AEECAA402D7EAAD0D52 /* WidgetKit.framework */; };
+		8C979492EC18187783294EB9 /* WatchLastReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C876D6D6ABE214BA4A6AD345 /* WatchLastReadingView.swift */; };
+		A9F6B8D787F0FA7A62ECCB82 /* BPCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FAFA819C32D4C2B61A072 /* BPCategories.swift */; };
+		AA200000000000000000001F /* HeartessaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001F /* HeartessaApp.swift */; };
+		AA200000000000000000002F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002F /* ContentView.swift */; };
+		AA200000000000000000003F /* BPReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003F /* BPReading.swift */; };
+		AA200000000000000000004F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004F /* UserProfile.swift */; };
+		AA200000000000000000005F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005F /* Assets.xcassets */; };
 		AA200000000000000000006F /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = AA800000000000000000002F /* RevenueCat */; };
+		AA200000000000000000009F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000009F /* GoogleService-Info.plist */; };
 		AA200000000000000000010F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000010F /* HomeView.swift */; };
 		AA200000000000000000011F /* AddReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000011F /* AddReadingView.swift */; };
 		AA200000000000000000012F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000012F /* HistoryView.swift */; };
@@ -19,19 +38,86 @@
 		AA200000000000000000018F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000018F /* PaywallView.swift */; };
 		AA200000000000000000019F /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000019F /* ExportService.swift */; };
 		AA20000000000000000001AF /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000001AF /* WatchConnectivityService.swift */; };
-		AA200000000000000000001F /* HeartessaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001F /* HeartessaApp.swift */; };
-		AA200000000000000000002F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002F /* ContentView.swift */; };
-		AA200000000000000000003F /* BPReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003F /* BPReading.swift */; };
-		AA200000000000000000004F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004F /* UserProfile.swift */; };
-		AA200000000000000000005F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005F /* Assets.xcassets */; };
-		AA200000000000000000009F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000009F /* GoogleService-Info.plist */; };
 		AA20000000000000000001BF /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000001BF /* FirestoreService.swift */; };
 		AA20000000000000000001CF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000002F /* FirebaseCore */; };
 		AA20000000000000000001DF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000003F /* FirebaseFirestore */; };
 		AA20000000000000000001EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA900000000000000000004F /* FirebaseAuth */; };
+		AA20000000000000000001FF /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000001FF /* DesignSystem.swift */; };
+		AA200000000000000000020F /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000020F /* InsightsView.swift */; };
+		AA200000000000000000021F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000021F /* ProfileView.swift */; };
+		AA200000000000000000022F /* SpaceGrotesk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000022F /* SpaceGrotesk.ttf */; };
+		AA200000000000000000023F /* ShareTechMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000023F /* ShareTechMono.ttf */; };
+		AA200000000000000000024F /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000024F /* ReminderService.swift */; };
+		AA200000000000000000025F /* AppGroupStore+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000025F /* AppGroupStore+iOS.swift */; };
+		AA200000000000000000026F /* BPReadingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357284BB0DE1E788C32D3E7 /* BPReadingDTO.swift */; };
+		AA200000000000000000027F /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA100000000000000000027F /* WatchConnectivity.framework */; };
+		AA200000000000000000028F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA100000000000000000028F /* WidgetKit.framework */; };
+		BF51CF963991D61643E2FCA3 /* BPReadingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357284BB0DE1E788C32D3E7 /* BPReadingDTO.swift */; };
+		D9CB8131A8722D2D217F5E36 /* BPCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FAFA819C32D4C2B61A072 /* BPCategories.swift */; };
+		D9E4B383DD9A5C7DB15D90D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4FEF4FAF60F5F24C12ADD8 /* Foundation.framework */; };
+		DE163FBF5FF8A965B8781A0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4FEF4FAF60F5F24C12ADD8 /* Foundation.framework */; };
+		E2E2965F139BAFA425B12762 /* HeartessaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CBD7E58F78AE734DB5D58B63 /* HeartessaWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, SignOnCopy, ); }; };
+		E6059582A4162663BC096D70 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 700EFEB31F0EC73E2712CA00 /* PrivacyInfo.xcprivacy */; };
+		EC18DFE255B4D827FB6DBFD9 /* BPCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FAFA819C32D4C2B61A072 /* BPCategories.swift */; };
+		F167871D27042EE93BADFF6C /* HeartessaWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE77D10C6BBFD75C9C7D3EF /* HeartessaWatchApp.swift */; };
+		F2875C156ABCBFEF96641AED /* HeartessaWatchComplication.appex in Embed Widget Extensions */ = {isa = PBXBuildFile; fileRef = 101A2B7665981BA1E7927D32 /* HeartessaWatchComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, SignOnCopy, ); }; };
+		F7C9D048A414E2C20CA253C2 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98630DF66037814A3BF4D5BE /* WatchContentView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1986EDCBA2CF85D765559ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA700000000000000000001F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91CE72F91A0D853E4E476F3;
+			remoteInfo = HeartessaWatchComplication;
+		};
+		3F5DA5C16BDAEBDAD95B8717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA700000000000000000001F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A22FEAAEAE01AC575DA9B8E;
+			remoteInfo = HeartessaWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		275E35A175E35869ABFE3AA2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				E2E2965F139BAFA425B12762 /* HeartessaWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F7602E8F08E06B3E9F5A50 /* Embed Widget Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F2875C156ABCBFEF96641AED /* HeartessaWatchComplication.appex in Embed Widget Extensions */,
+			);
+			name = "Embed Widget Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		09FC0AEECAA402D7EAAD0D52 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		101A2B7665981BA1E7927D32 /* HeartessaWatchComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeartessaWatchComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		378688DD3FD2216190E4A238 /* HeartessaComplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeartessaComplication.swift; sourceTree = "<group>"; };
+		37EACF702BA5F731B4DA134E /* WatchConnectivityBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchConnectivityBridge.swift; sourceTree = "<group>"; };
+		4D7FAFA819C32D4C2B61A072 /* BPCategories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BPCategories.swift; sourceTree = "<group>"; };
+		4FE77D10C6BBFD75C9C7D3EF /* HeartessaWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeartessaWatchApp.swift; sourceTree = "<group>"; };
+		700EFEB31F0EC73E2712CA00 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		7DBF4F4AD140A434C3E415BF /* AppGroupStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppGroupStore.swift; sourceTree = "<group>"; };
+		87EE85675865D9B0438B7AD0 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		9357284BB0DE1E788C32D3E7 /* BPReadingDTO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BPReadingDTO.swift; sourceTree = "<group>"; };
+		98630DF66037814A3BF4D5BE /* WatchContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
 		AA100000000000000000001F /* HeartessaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartessaApp.swift; sourceTree = "<group>"; };
 		AA100000000000000000002F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA100000000000000000003F /* BPReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPReading.swift; sourceTree = "<group>"; };
@@ -53,9 +139,33 @@
 		AA100000000000000000019F /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
 		AA10000000000000000001AF /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		AA10000000000000000001BF /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		AA10000000000000000001FF /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		AA100000000000000000020F /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		AA100000000000000000021F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AA100000000000000000022F /* SpaceGrotesk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpaceGrotesk.ttf; sourceTree = "<group>"; };
+		AA100000000000000000023F /* ShareTechMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShareTechMono.ttf; sourceTree = "<group>"; };
+		AA100000000000000000024F /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		AA100000000000000000025F /* AppGroupStore+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppGroupStore+iOS.swift"; sourceTree = "<group>"; };
+		AA100000000000000000027F /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		AA100000000000000000028F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B192B0956A018F6B67E349AC /* WatchLogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchLogView.swift; sourceTree = "<group>"; };
+		C876D6D6ABE214BA4A6AD345 /* WatchLastReadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchLastReadingView.swift; sourceTree = "<group>"; };
+		CB0DDC9BE2348BA4A0D15F98 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CBD7E58F78AE734DB5D58B63 /* HeartessaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartessaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F471EBB8275162DFDCF95E10 /* ColorHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		FA4FEF4FAF60F5F24C12ADD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5522A065341C5D54C8F1D58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE163FBF5FF8A965B8781A0D /* Foundation.framework in Frameworks */,
+				7769FCECA9A75F1223EA1803 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA400000000000000000003F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,12 +174,75 @@
 				AA20000000000000000001CF /* FirebaseCore in Frameworks */,
 				AA20000000000000000001DF /* FirebaseFirestore in Frameworks */,
 				AA20000000000000000001EF /* FirebaseAuth in Frameworks */,
+				AA200000000000000000027F /* WatchConnectivity.framework in Frameworks */,
+				AA200000000000000000028F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5E1F17C4DEE1C0DAB3770A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E4B383DD9A5C7DB15D90D8 /* Foundation.framework in Frameworks */,
+				5CB886FB3040285818861B89 /* WatchConnectivity.framework in Frameworks */,
+				514393AF15061A4A21F639F7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60B045520BABE1ADC8AD6B34 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9357284BB0DE1E788C32D3E7 /* BPReadingDTO.swift */,
+				4D7FAFA819C32D4C2B61A072 /* BPCategories.swift */,
+				F471EBB8275162DFDCF95E10 /* ColorHex.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6E2FB3B78C4C01D00D0EBE5C /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA4FEF4FAF60F5F24C12ADD8 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		6EC138D1F0D07FC0C5F096CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2FB3B78C4C01D00D0EBE5C /* watchOS */,
+				87EE85675865D9B0438B7AD0 /* WatchConnectivity.framework */,
+				CB0DDC9BE2348BA4A0D15F98 /* WidgetKit.framework */,
+				09FC0AEECAA402D7EAAD0D52 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79DB1A1B309536D2006FFA1B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				AA100000000000000000027F /* WatchConnectivity.framework */,
+				AA100000000000000000028F /* WidgetKit.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AA300000000000000000000F = {
+			isa = PBXGroup;
+			children = (
+				AA300000000000000000001F /* Heartessa */,
+				AA300000000000000000004F /* Products */,
+				6EC138D1F0D07FC0C5F096CC /* Frameworks */,
+				E069E36D6317057433D369B6 /* HeartessaWatch */,
+				CA67674028FAC09EECCA3215 /* HeartessaWatchComplication */,
+				60B045520BABE1ADC8AD6B34 /* Shared */,
+				79DB1A1B309536D2006FFA1B /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
 		AA300000000000000000001F /* Heartessa */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +260,19 @@
 				AA100000000000000000019F /* ExportService.swift */,
 				AA10000000000000000001AF /* WatchConnectivityService.swift */,
 				AA10000000000000000001BF /* FirestoreService.swift */,
+				AA10000000000000000001FF /* DesignSystem.swift */,
+				AA100000000000000000020F /* InsightsView.swift */,
+				AA100000000000000000021F /* ProfileView.swift */,
+				AA100000000000000000022F /* SpaceGrotesk.ttf */,
+				AA100000000000000000023F /* ShareTechMono.ttf */,
+				AA100000000000000000024F /* ReminderService.swift */,
+				AA100000000000000000025F /* AppGroupStore+iOS.swift */,
 				AA300000000000000000002F /* Models */,
 				AA100000000000000000005F /* Assets.xcassets */,
 				AA100000000000000000006F /* Info.plist */,
 				AA100000000000000000007F /* Heartessa.entitlements */,
 				AA100000000000000000009F /* GoogleService-Info.plist */,
+				700EFEB31F0EC73E2712CA00 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Heartessa;
 			sourceTree = "<group>";
@@ -109,21 +290,55 @@
 			isa = PBXGroup;
 			children = (
 				AA100000000000000000008F /* Heartessa.app */,
+				CBD7E58F78AE734DB5D58B63 /* HeartessaWatch.app */,
+				101A2B7665981BA1E7927D32 /* HeartessaWatchComplication.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA300000000000000000000F = {
+		CA67674028FAC09EECCA3215 /* HeartessaWatchComplication */ = {
 			isa = PBXGroup;
 			children = (
-				AA300000000000000000001F /* Heartessa */,
-				AA300000000000000000004F /* Products */,
+				378688DD3FD2216190E4A238 /* HeartessaComplication.swift */,
 			);
+			path = HeartessaWatchComplication;
+			sourceTree = "<group>";
+		};
+		E069E36D6317057433D369B6 /* HeartessaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4FE77D10C6BBFD75C9C7D3EF /* HeartessaWatchApp.swift */,
+				37EACF702BA5F731B4DA134E /* WatchConnectivityBridge.swift */,
+				98630DF66037814A3BF4D5BE /* WatchContentView.swift */,
+				B192B0956A018F6B67E349AC /* WatchLogView.swift */,
+				C876D6D6ABE214BA4A6AD345 /* WatchLastReadingView.swift */,
+				7DBF4F4AD140A434C3E415BF /* AppGroupStore.swift */,
+			);
+			path = HeartessaWatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A22FEAAEAE01AC575DA9B8E /* HeartessaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B1B2B470AB74BEAF374336 /* Build configuration list for PBXNativeTarget "HeartessaWatch" */;
+			buildPhases = (
+				EFC57FE93DFEE813EC085776 /* Sources */,
+				CF5E1F17C4DEE1C0DAB3770A /* Frameworks */,
+				9C6D70D2ECFD3F08DDC2CB27 /* Resources */,
+				77F7602E8F08E06B3E9F5A50 /* Embed Widget Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E841F51F295035BE34287E /* PBXTargetDependency */,
+			);
+			name = HeartessaWatch;
+			productName = HeartessaWatch;
+			productReference = CBD7E58F78AE734DB5D58B63 /* HeartessaWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AA500000000000000000001F /* Heartessa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA600000000000000000005F /* Build configuration list for PBXNativeTarget "Heartessa" */;
@@ -131,10 +346,12 @@
 				AA400000000000000000001F /* Sources */,
 				AA400000000000000000002F /* Resources */,
 				AA400000000000000000003F /* Frameworks */,
+				275E35A175E35869ABFE3AA2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				33A030A613E9E16E9F72585A /* PBXTargetDependency */,
 			);
 			name = Heartessa;
 			packageProductDependencies = (
@@ -147,6 +364,23 @@
 			productReference = AA100000000000000000008F /* Heartessa.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C91CE72F91A0D853E4E476F3 /* HeartessaWatchComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20992514B3FA99558AA6A17 /* Build configuration list for PBXNativeTarget "HeartessaWatchComplication" */;
+			buildPhases = (
+				AF1E64E75B88CBA157848DFE /* Sources */,
+				5522A065341C5D54C8F1D58E /* Frameworks */,
+				99684960AE0F2DD4D551B29F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartessaWatchComplication;
+			productName = HeartessaWatchComplication;
+			productReference = 101A2B7665981BA1E7927D32 /* HeartessaWatchComplication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,7 +389,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					AA500000000000000000001F = {
 						CreatedOnToolsVersion = 16.3;
@@ -180,17 +414,36 @@
 			projectRoot = "";
 			targets = (
 				AA500000000000000000001F /* Heartessa */,
+				9A22FEAAEAE01AC575DA9B8E /* HeartessaWatch */,
+				C91CE72F91A0D853E4E476F3 /* HeartessaWatchComplication */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		99684960AE0F2DD4D551B29F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6D70D2ECFD3F08DDC2CB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA400000000000000000002F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA200000000000000000005F /* Assets.xcassets in Resources */,
 				AA200000000000000000009F /* GoogleService-Info.plist in Resources */,
+				AA200000000000000000022F /* SpaceGrotesk.ttf in Resources */,
+				AA200000000000000000023F /* ShareTechMono.ttf in Resources */,
+				E6059582A4162663BC096D70 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,37 +470,105 @@
 				AA200000000000000000019F /* ExportService.swift in Sources */,
 				AA20000000000000000001AF /* WatchConnectivityService.swift in Sources */,
 				AA20000000000000000001BF /* FirestoreService.swift in Sources */,
+				AA20000000000000000001FF /* DesignSystem.swift in Sources */,
+				AA200000000000000000020F /* InsightsView.swift in Sources */,
+				AA200000000000000000021F /* ProfileView.swift in Sources */,
+				AA200000000000000000024F /* ReminderService.swift in Sources */,
+				AA200000000000000000025F /* AppGroupStore+iOS.swift in Sources */,
+				AA200000000000000000026F /* BPReadingDTO.swift in Sources */,
+				EC18DFE255B4D827FB6DBFD9 /* BPCategories.swift in Sources */,
+				47D90DA646548C50B653D2F9 /* ColorHex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E64E75B88CBA157848DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5E487303A017A438DB27FA /* HeartessaComplication.swift in Sources */,
+				BF51CF963991D61643E2FCA3 /* BPReadingDTO.swift in Sources */,
+				A9F6B8D787F0FA7A62ECCB82 /* BPCategories.swift in Sources */,
+				4B9E22BCD92B4F1CB14DFD1A /* ColorHex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC57FE93DFEE813EC085776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F167871D27042EE93BADFF6C /* HeartessaWatchApp.swift in Sources */,
+				72ECB0A2EB893F5721F65357 /* WatchConnectivityBridge.swift in Sources */,
+				F7C9D048A414E2C20CA253C2 /* WatchContentView.swift in Sources */,
+				34E5F6292D101B7DBAF46F41 /* WatchLogView.swift in Sources */,
+				8C979492EC18187783294EB9 /* WatchLastReadingView.swift in Sources */,
+				34F0C151F15A805532F13FCC /* AppGroupStore.swift in Sources */,
+				3A105C5499BC647D9850270B /* BPReadingDTO.swift in Sources */,
+				D9CB8131A8722D2D217F5E36 /* BPCategories.swift in Sources */,
+				6E36E8E303622CFB563F25B8 /* ColorHex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		33A030A613E9E16E9F72585A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HeartessaWatch;
+			target = 9A22FEAAEAE01AC575DA9B8E /* HeartessaWatch */;
+			targetProxy = 3F5DA5C16BDAEBDAD95B8717 /* PBXContainerItemProxy */;
+		};
+		52E841F51F295035BE34287E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HeartessaWatchComplication;
+			target = C91CE72F91A0D853E4E476F3 /* HeartessaWatchComplication */;
+			targetProxy = 1986EDCBA2CF85D765559ED1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		99B9EBA0BC68787C08B501C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartessaWatch/HeartessaWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HeartessaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
 		AA600000000000000000001F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Heartessa/Heartessa.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Heartessa/Heartessa.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9F2G8CQ45J;
+				CURRENT_PROJECT_VERSION = 6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Heartessa/Info.plist";
+				INFOPLIST_FILE = Heartessa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.heartessa.app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
@@ -256,26 +577,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Heartessa/Heartessa.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9F2G8CQ45J;
+				CODE_SIGN_ENTITLEMENTS = Heartessa/Heartessa.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Heartessa/Info.plist";
+				INFOPLIST_FILE = Heartessa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.heartessa.app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Heartessa App Store";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -306,6 +627,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -314,6 +636,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9F2G8CQ45J;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -321,7 +644,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 $(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -334,6 +660,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -365,6 +692,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -373,6 +701,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9F2G8CQ45J;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -388,14 +717,92 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD896412D3252491EAB7453F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = HeartessaWatchComplication/HeartessaWatchComplication.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartessaWatchComplication/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C63A4A7B1D2B0E9E6A76EF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartessaWatch/HeartessaWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HeartessaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Heartessa Watch App Store";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		DEBEA59BE61D23D54D21B28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = HeartessaWatchComplication/HeartessaWatchComplication.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = HeartessaWatchComplication/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heartessa.app.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Heartessa Complication App Store";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52B1B2B470AB74BEAF374336 /* Build configuration list for PBXNativeTarget "HeartessaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63A4A7B1D2B0E9E6A76EF02 /* Release */,
+				99B9EBA0BC68787C08B501C1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20992514B3FA99558AA6A17 /* Build configuration list for PBXNativeTarget "HeartessaWatchComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBEA59BE61D23D54D21B28B /* Release */,
+				AD896412D3252491EAB7453F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA600000000000000000005F /* Build configuration list for PBXNativeTarget "Heartessa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -457,7 +864,6 @@
 			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
-
 	};
 	rootObject = AA700000000000000000001F /* Project object */;
 }

@@ -1,0 +1,24 @@
+# Secrets — never commit
+GoogleService-Info.plist
+*firebase-adminsdk*.json
+*.p8
+*.p12
+*.mobileprovision
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcworkspace/xcuserdata/
+.build/
+
+# macOS
+.DS_Store
+
+# SPM
+.swiftpm/
+Packages/
+Package.resolved
+
+# CocoaPods (not used but guard anyway)
+Pods/

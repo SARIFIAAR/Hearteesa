@@ -27,8 +27,8 @@ final class CameraHeartRateService: NSObject, ObservableObject {
 
     // PPG signal buffer — accessed only from sampleQueue via captureOutput dispatch
     private var redSamples:    [Double] = []
-    private let targetFrames = 450          // 15 s × 30 fps
-    private let stableFrames = 30           // 1 s of stable red signal before measurement starts
+    private let targetFrames = 900          // 30 s × 30 fps — matches Instant Heart Rate / Cardiio standard
+    private let stableFrames = 12           // 0.4 s of stable signal — easier to hit
     private var warmupCount  = 0
     private var noFingerCount = 0
     private var isListening  = false
@@ -98,29 +98,30 @@ final class CameraHeartRateService: NSObject, ObservableObject {
             self.videoOutput.setSampleBufferDelegate(self, queue: self.sampleQueue)
             if self.session.canAddOutput(self.videoOutput) { self.session.addOutput(self.videoOutput) }
 
-            // Lock to 30 fps for consistent PPG sampling rate
-            if let range = device.activeFormat.videoSupportedFrameRateRanges.first(where: { $0.maxFrameRate >= 30 }) {
-                try? device.lockForConfiguration()
+            // Lock FPS only (torch requires session to be running first)
+            do {
+                try device.lockForConfiguration()
                 let fps30 = CMTime(value: 1, timescale: 30)
                 device.activeVideoMinFrameDuration = fps30
                 device.activeVideoMaxFrameDuration = fps30
-                _ = range
                 device.unlockForConfiguration()
-            }
+            } catch {}
 
             self.session.commitConfiguration()
             self.session.startRunning()
-            self.enableTorch(device: device)
 
             Task { @MainActor [weak self] in self?.state = .cameraOpen }
         }
     }
 
-    nonisolated private func enableTorch(device: AVCaptureDevice) {
-        guard device.hasTorch, device.isTorchAvailable else { return }
-        try? device.lockForConfiguration()
-        try? device.setTorchModeOn(level: AVCaptureDevice.maxAvailableTorchLevel)
-        device.unlockForConfiguration()
+    func enableTorch() {
+        sessionQueue.async { [weak self] in
+            guard let device = self?.captureDevice,
+                  device.hasTorch, device.isTorchAvailable else { return }
+            try? device.lockForConfiguration()
+            device.torchMode = .on
+            device.unlockForConfiguration()
+        }
     }
 
     nonisolated private func disableTorch() {
@@ -133,7 +134,7 @@ final class CameraHeartRateService: NSObject, ObservableObject {
     // MARK: - Frame processing (called on @MainActor via captureOutput dispatch)
 
     private func process(avgRed: Double) {
-        let fingerPresent = avgRed > 0.88
+        let fingerPresent = avgRed > 0.65
         fingerDetected = fingerPresent
 
         guard isListening else { return }
@@ -148,14 +149,17 @@ final class CameraHeartRateService: NSObject, ObservableObject {
                     state = .measuring(bpm: 0)
                 }
             } else {
-                warmupCount    = 0
                 noFingerCount += 1
+                if noFingerCount > 5 { warmupCount = 0 } // allow brief gaps
             }
 
         case .measuring:
-            if !fingerPresent {
+            // Use a lower removal threshold during recording — PPG signal oscillates
+            // naturally so avgRed dips; only reset if finger is clearly gone.
+            let fingerGone = avgRed < 0.40
+            if fingerGone {
                 noFingerCount += 1
-                if noFingerCount > 20 {
+                if noFingerCount > 60 {   // 2 s of truly missing finger
                     warmupCount   = 0
                     noFingerCount = 0
                     redSamples    = []

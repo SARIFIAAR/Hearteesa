@@ -71,6 +71,7 @@ struct CameraHRView: View {
         .onChange(of: service.state) { _, newState in
             switch newState {
             case .cameraOpen:
+                service.enableTorch()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                     service.beginMeasurement()
                 }

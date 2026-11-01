@@ -17,11 +17,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>7</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Heartessa uses the rear camera to measure your heart rate from fingertip pulsation.</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Heartessa uses Face ID to lock your health data when you leave the app.</string>
 	<key>NSHealthShareUsageDescription</key>
